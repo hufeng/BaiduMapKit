@@ -1,0 +1,30 @@
+{
+  "name": "baidumapkit",
+  "version": "1.0.0",
+  "description": "react-native bridge baidu's map android sdk",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hufeng/BaiduMapKit.git"
+  },
+  "keywords": [
+    "react-native",
+    "baidu",
+    "map"
+  ],
+  "peerDependencies": {
+    "react-native": ">=0.14.0"
+  },
+  "author": "hufeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hufeng/BaiduMapKit/issues"
+  },
+  "homepage": "https://github.com/hufeng/BaiduMapKit#readme"
+}
