@@ -86,7 +86,7 @@ project(':baidumapkit').projectDir = new File(rootProject.projectDir, '../node_m
 
 dependencies {
     ...
-    compile project(':baidukitmap')
+    compile project(':baidumapkit')
 }
 ```
 
