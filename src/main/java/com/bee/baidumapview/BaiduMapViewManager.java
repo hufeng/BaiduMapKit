@@ -9,8 +9,6 @@ import com.baidu.mapapi.map.MapView;
 import com.baidu.mapapi.map.MarkerOptions;
 import com.baidu.mapapi.map.OverlayOptions;
 import com.baidu.mapapi.model.LatLng;
-import com.facebook.csslayout.CSSNode;
-import com.facebook.csslayout.MeasureOutput;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.uimanager.LayoutShadowNode;
 import com.facebook.react.uimanager.ReactProp;
@@ -23,6 +21,16 @@ public class BaiduMapViewManager extends SimpleViewManager<MapView> {
     public static final String TAG = "RCTBaiduMap";
 
     private Activity mActivity;
+
+    @Override
+    public LayoutShadowNode createShadowNodeInstance() {
+        return new BaiduMapShadowNode();
+    }
+
+    @Override
+    public Class getShadowNodeClass() {
+        return BaiduMapShadowNode.class;
+    }
 
     public BaiduMapViewManager(Activity activity) {
         mActivity = activity;
@@ -102,24 +110,5 @@ public class BaiduMapViewManager extends SimpleViewManager<MapView> {
     @Override
     protected MapView createViewInstance(ThemedReactContext reactContext) {
         return new MapView(mActivity);
-    }
-
-
-    private final class BaiduMapShadowNode extends LayoutShadowNode
-            implements CSSNode.MeasureFunction {
-
-        public BaiduMapShadowNode() {
-            setMeasureFunction(this);
-        }
-
-        @Override
-        public void measure(CSSNode node, float width, MeasureOutput measureOutput) {
-            measureOutput.width = width;
-        }
-    }
-
-    @Override
-    public LayoutShadowNode createShadowNodeInstance() {
-        return new BaiduMapShadowNode();
     }
 }

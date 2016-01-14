@@ -1,6 +1,6 @@
 {
   "name": "baidumapkit",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "react-native bridge baidu's map android sdk",
   "main": "index.js",
   "directories": {
