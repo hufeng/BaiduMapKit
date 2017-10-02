@@ -1,7 +1,7 @@
 # react-native-baidu-map
 百度地图的React-Native版本
 
-## example
+## Example
 
 ```javascript
 'use strict';
@@ -64,7 +64,7 @@ AppRegistry.registerComponent('BaiduMapExample', () => BaiduMapExample);
 
 
 
-## step 1 install
+## Step 1 - Install
 ```sh
 $ npm install baidumapkit --save
 ```
@@ -152,4 +152,4 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
 ```
 
 
-## At last, 祝玩得愉快。我会继续完善功能。
+## Finally, 祝玩得愉快。我会继续完善功能。
